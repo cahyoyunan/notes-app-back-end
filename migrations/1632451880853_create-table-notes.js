@@ -1,9 +1,5 @@
-/* eslint-disable camelcase */
- 
-exports.shorthands = undefined;
- 
 exports.up = (pgm) => {
-  pgm.createTable('notes', {
+  pgm.createTable('notess', {
     id: {
       type: 'VARCHAR(50)',
       primaryKey: true,
@@ -30,7 +26,7 @@ exports.up = (pgm) => {
     },
   });
 };
- 
+
 exports.down = (pgm) => {
   pgm.dropTable('notes');
 };
